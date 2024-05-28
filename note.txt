@@ -1,0 +1,13 @@
+Anda sedang membuat sebuah aplikasi menggunakan Payload CMS dan Next.js. Aplikasi ini menggunakan TypeScript untuk pengembangan, dengan konfigurasi yang berfokus pada bundling, pengaturan server, dan integrasi dengan berbagai paket Payload CMS.
+
+Di dalamnya, Anda memiliki beberapa file:
+
+1. **payload.config.ts**: Ini adalah file konfigurasi utama untuk aplikasi Anda. Di sini, Anda mengonfigurasi Payload CMS dengan menggunakan berbagai opsi seperti server URL, koleksi data, rute admin, pengaturan bundler, editor rich text, adapter database MongoDB, dan pengaturan TypeScript.
+
+2. **server.ts**: File ini bertanggung jawab untuk inisialisasi server Express, mengatur payload, menyiapkan dan memulai aplikasi Next.js, dan menangani middleware untuk request.
+
+3. **get-payload.ts**: File ini berisi fungsi untuk mendapatkan klien Payload CMS. Di sini, Anda menginisialisasi Payload CMS dengan konfigurasi dari file `.env`, memastikan bahwa secret didefinisikan, dan menyimpan instance payload yang sudah diinisialisasi agar dapat diakses secara global.
+
+4. **next-utils.ts**: File ini berisi utilitas untuk menyiapkan aplikasi Next.js dan mendapatkan penanganan permintaan (request handler) dari aplikasi tersebut.
+
+Secara keseluruhan, Anda membuat sebuah aplikasi berbasis TypeScript yang menggunakan Payload CMS untuk manajemen konten dan Next.js sebagai platform pengembangan aplikasi web.
